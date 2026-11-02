@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Min Jae Bae — Curriculum Vitae</title>
+<!-- Source of files/cv.pdf. Rebuild with headless Edge:
+     msedge --headless=new --no-pdf-header-footer --print-to-pdf=cv.pdf file:///.../files/cv.html -->
+<style>
+  @page { size: A4; margin: 15mm 16mm 15mm 16mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Calibri, "Segoe UI", Arial, sans-serif; font-size: 10.4pt; line-height: 1.38; color: #1a1a1a; }
+  a { color: inherit; text-decoration: none; }
+  header { border-bottom: 2px solid #4d7a3e; padding-bottom: 7px; margin-bottom: 4px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 22pt; font-weight: 700; letter-spacing: 0.2px; }
+  .role { font-size: 11.5pt; color: #4d7a3e; font-weight: 600; margin: 1px 0 4px; }
+  .contact { font-size: 9.6pt; color: #333; }
+  .contact span + span::before { content: "  |  "; color: #999; white-space: pre; }
+  h2 { font-family: Georgia, "Times New Roman", serif; font-size: 12pt; color: #2f5426; text-transform: uppercase; letter-spacing: 0.8px;
+       border-bottom: 1px solid #b9cfae; padding-bottom: 2px; margin: 12px 0 6px; break-after: avoid; }
+  h3 { font-size: 10.4pt; font-weight: 700; margin: 6px 0 2px; break-after: avoid; }
+  p { margin-bottom: 5px; text-align: justify; }
+  .entry { display: grid; grid-template-columns: 1fr auto; column-gap: 12px; margin-bottom: 6px; break-inside: avoid; }
+  .entry .what { font-weight: 700; }
+  .entry .when { white-space: nowrap; color: #333; }
+  .entry .detail { grid-column: 1 / -1; color: #333; }
+  ul { padding-left: 15px; }
+  li { margin-bottom: 3px; break-inside: avoid; }
+  ol.pubs { padding-left: 20px; }
+  ol.pubs li { margin-bottom: 5px; }
+  .doi { color: #2f5426; font-size: 9.4pt; white-space: nowrap; }
+  .note { font-size: 9.2pt; color: #555; margin-top: 2px; }
+  .skills li b { font-weight: 700; }
+  .muted { color: #555; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Min Jae Bae</h1>
+  <div class="role">Ph.D. Candidate &middot; Plant Epigenetics and Chromatin Biology</div>
+  <div class="contact">Cell Signaling Lab, Department of Biomedical Science and Engineering, Konkuk University, 120 Neungdong-ro, Gwangjin-gu, Seoul, Korea</div>
+  <div class="contact">
+    <span>bmj727@gmail.com</span><span>minjaebae-727.github.io</span><span>ORCID 0000-0003-4803-9839</span><span>linkedin.com/in/min-jae-bae-a08693214</span>
+  </div>
+</header>
+
+<h2>Education</h2>
+<div class="entry">
+  <div class="what">Ph.D. candidate in Biomedical Science and Engineering, Konkuk University</div>
+  <div class="when">Mar. 2021 &ndash; present (expected Feb. 2027)</div>
+  <div class="detail">Advisor: Prof. Dae-Jin Yun. Research: HOS15-mediated degradation of linker histone H1.3 and LisH-dependent HOS15 dimerization in cold stress.</div>
+</div>
+<div class="entry">
+  <div class="what">M.S. in Biomedical Science and Engineering, Konkuk University</div>
+  <div class="when">Mar. 2019 &ndash; Feb. 2021</div>
+  <div class="detail">Thesis: Structural and Functional Analysis of HOS15, a Substrate Receptor of CRL4 in Cold Stress Signaling. Advisor: Prof. Dae-Jin Yun.</div>
+</div>
+<div class="entry">
+  <div class="what">B.S. in Biomedical Science and Engineering, Konkuk University</div>
+  <div class="when">Mar. 2013 &ndash; Feb. 2019</div>
+  <div class="detail">Thesis: Functional Studies of SUMOylation of Histone Deacetylase in Plants. Advisor: Prof. Dae-Jin Yun.</div>
+</div>
+
+<h2>Research Focus</h2>
+<p>My research asks how plants remodel chromatin to survive cold. I study HOS15, the WD40-repeat substrate receptor of the CULLIN4&ndash;DDB1 E3 ubiquitin ligase (CRL4<sup>HOS15</sup>), and its chromatin substrates, the histone deacetylase HD2C and the linker histone H1.3, in <i>Arabidopsis thaliana</i>.</p>
+<h3>Linker histone H1.3 and chromatin decondensation in the cold</h3>
+<p>I found that HOS15 interacts preferentially with H1.3 among the three Arabidopsis H1 variants, that cold lowers H1 protein in a HOS15- and proteasome-dependent manner, and that H1.3 is the variant that is lost. <i>h1.3</i> mutants are more freezing tolerant and suppress the freezing sensitivity of <i>hos15-2</i>. Their chromocenters are fewer and less condensed, resembling cold-treated wild-type nuclei, and NicE-seq shows increased accessibility mainly in pericentromeric heterochromatin. RNA-seq shows that the core CBF&ndash;COR program is intact in <i>h1.3</i>, whereas defense- and lignin-related genes are pre-activated and heat-shock and antioxidant genes are induced by cold only in <i>h1.3</i>.</p>
+<h3>HOS15 dimerization and CRL4<sup>HOS15</sup> activity</h3>
+<p>I showed that HOS15 forms homodimers through its N-terminal LisH motif. Alanine substitutions of conserved hydrophobic LisH residues abolish dimerization in yeast, and these variants fail to support cold-induced ubiquitination and degradation of HD2C or to restore the freezing tolerance of <i>hos15-2</i>. I also characterize the intrinsically disordered region (IDR) within the HOS15 coiled-coil domain, and use LC-MS-based proteomics to profile proteins that change in <i>hos15</i> and <i>h1</i> mutants.</p>
+
+<h2>Research Projects</h2>
+<ul>
+  <li><b>Global Plant Stress Research Center</b> (NRF), 2024.08&ndash;2030.04 &mdash; Participating Researcher</li>
+  <li><b>Genome-wide chromatin reprogramming and transcriptome regulation in plant environmental stress adaptation</b> (NRF), 2026.03&ndash;2031.02 &mdash; Participating Researcher</li>
+  <li><b>Chromatin reconfiguration and transcriptional control for plant stress adaptation</b> (NRF), 2022.03&ndash;2027.02 &mdash; Co-participating Researcher</li>
+</ul>
+
+<h2>Professional Service</h2>
+<ul>
+  <li><b>Member, NASA GeneLab OSDR Plant Analysis Working Group (Plant AWG)</b>, Sep. 2026&ndash;present &mdash; Contributing to the analysis of spaceflight and astrobotany omics datasets in NASA&rsquo;s Open Science Data Repository (OSDR), with international researchers on plant biology in the space environment.</li>
+  <li><b>Member, NASA GeneLab OSDR Regolith Analysis Working Group (Regolith AWG)</b>, Sep. 2026&ndash;present &mdash; Contributing plant molecular biology expertise to cross-disciplinary work on plant and plant&ndash;microbe growth in lunar/Martian regolith, including dataset curation and standards in NASA OSDR.</li>
+</ul>
+
+<h2>Skills</h2>
+<ul class="skills">
+  <li><b>Plant molecular biology:</b> Gateway cloning, Gibson assembly, site-directed mutagenesis, vector construction and design (Vector NTI), transgenic line generation, Arabidopsis genetics and phenotypic analysis</li>
+  <li><b>Epigenetics &amp; chromatin biology:</b> histone biology, chromatin remodeling, histone acetylation/methylation analysis, nucleosome organization, NicE-seq, ChIP-seq, open-chromatin/accessibility analysis</li>
+  <li><b>Protein structure &amp; function:</b> domain-level mutagenesis, intrinsically disordered region (IDR) analysis, protein conformation and structure&ndash;function studies</li>
+  <li><b>Omics &amp; data analysis:</b> RNA-seq and NicE-seq analysis (R: DESeq2, limma, GSEA; SalmonProcessor, OmicsForge), LC-MS proteomics, alternative splicing analysis, sequence alignment (BioEdit), genome data visualization (IGV)</li>
+  <li><b>Protein &amp; stress biology:</b> ubiquitin&ndash;proteasome pathway, E3 ligase complexes, protein stability, cold/drought/thermotolerance and senescence signaling</li>
+  <li><b>Software/tools:</b> R, HOMER, IGV, BioEdit, Vector NTI, GraphPad Prism, Bio-Rad CFX Maestro (RT-qPCR), Zeiss ZEN and Leica LAS X (confocal imaging), ImageJ</li>
+</ul>
+
+<h2>Publications (SCIE/ESCI)</h2>
+<ol class="pubs">
+  <li>Ali A, Zareen S, Bader ZE, Park J, Khan IU, Park K, Albakri N, <b>Bae MJ</b>, Bressan RA, Pardo JM, Yun DJ, Xu ZY. A GPS2-like protein interacts with HOS15 and HDA6 to form a repressor complex that regulates ABA signaling and drought adaptation in Arabidopsis. <i>Plant Communications</i> (2026). <span class="doi">doi:10.1016/j.xplc.2026.101843</span></li>
+  <li><b>Bae MJ</b>, Zareen S, Yun H, Ali A, Bader ZE, Park K, Albakri N, Jung YJ, Yun DJ, Park J. Unveiling the epigenetic and stress-responsive function of histone H1 in plants. <i>Plant Signaling &amp; Behavior</i> (2026). <span class="doi">doi:10.1080/15592324.2026.2677313</span></li>
+  <li>Albakri N, Bader ZE, Park KS, <b>Bae MJ</b>, Zareen S, Yun H, Pradhan S, Yun DJ, Park J. HOS15 modulates alternative splicing homeostasis under cold stress in <i>Arabidopsis thaliana</i>. <i>Journal of Plant Biology</i> (2025). <span class="doi">doi:10.1007/s12374-025-09465-9</span></li>
+  <li>Park K, Lim CJ, Albakri N, <b>Bae MJ</b>, Park J. HOS15 contributes to thermotolerance through destabilization of HD2C in Arabidopsis. <i>Journal of Plant Biology</i> (2025). <span class="doi">doi:10.1007/s12374-025-09466-8</span></li>
+  <li>Zareen S, Ali A, <b>Bae MJ</b>, Albakri N, Park K, Yun H, Yun DJ, Park J. HOS15 together with PWR&ndash;HDA9 positively regulates dark-induced senescence in Arabidopsis. <i>Plant Signaling &amp; Behavior</i> (2025). <span class="doi">doi:10.1080/15592324.2025.2564962</span></li>
+  <li>Bader ZE<sup>&dagger;</sup>, <b>Bae MJ<sup>&dagger;</sup></b>, Ali A, Park J, Baek D, Yun DJ. GIGANTEA-ENHANCED EM LEVEL complex initiates drought escape response via dual function of ABA synthesis and flowering promotion. <i>Plant Signaling &amp; Behavior</i> (2023). <span class="doi">doi:10.1080/15592324.2023.2180056</span></li>
+  <li>Lim CJ, Park KS, Ali A, Park J, Ryou SM, Shen M, Khan HA, Bader ZE, Zareen S, <b>Bae MJ</b>, Choi JH, Xu ZY, Pardo JM, Yun DJ. Negative regulation of floral transition in Arabidopsis by HOS15-PWR-HDA9 complex. <i>Frontiers in Plant Science</i> (2023). <span class="doi">doi:10.3389/fpls.2022.1105988</span></li>
+  <li>Lim CJ, Park J, Shen M, Park HJ, Cheong MS, Park K, Baek D, <b>Bae MJ</b>, Ali A, Jan M, Lee SY, Lee BH, Kim WY, Pardo JM, Yun DJ. The histone-modifying complex PWR/HOS15/HD2C epigenetically regulates cold tolerance. <i>Plant Physiology</i> (2020). <span class="doi">doi:10.1104/pp.20.00439</span></li>
+</ol>
+<p class="note"><sup>&dagger;</sup> These authors contributed equally.</p>
+
+<h3>Manuscripts in preparation</h3>
+<ul>
+  <li><b>Bae MJ</b>, Bader ZE, Ali A, Yun DJ, Park J. Mechanisms of histone H1 degradation under cold stress.</li>
+  <li>Ali A<sup>&dagger;</sup>, <b>Bae MJ<sup>&dagger;</sup></b>, Bader ZE, Zareen S, Park B, Ali Z, Yun DJ, Park J. HOS15 dimerization promotes HD2C degradation during cold stress.</li>
+</ul>
+
+<h2>Patents</h2>
+<ul>
+  <li>Vector for improving productivity of cellulose and transformed mouseear cress by the same. KR Patent Application No. 10-2023-0113597</li>
+  <li>Vector for improving productivity and storage capacity of vegetable oil and transformed plant by the same. KR Patent Application No. 10-2024-0168464</li>
+  <li>Vector for improving productivity of cellulose and transformed mouseear cress by the same. KR Patent Application No. 10-2024-0168432</li>
+  <li>Sucrose-accumulating plant and method for preparing the same. KR Patent Application No. 10-2025-0104961</li>
+  <li>Ethanol production and tolerance enhanced yeast strain and method for producing ethanol using the same. KR Patent Application No. 10-2025-0104960</li>
+  <li>Recombinant <i>Kluyveromyces marxianus</i> strain with engineered xylose metabolic pathway and method for producing ethanol using the same. KR Patent Application No. 10-2025-0104960</li>
+</ul>
+
+<h2>Awards and Honors</h2>
+<div class="entry"><div>HOPE Fellow, HOPE Meetings with Nobel Laureates, Japan Society for the Promotion of Science (JSPS), Japan</div><div class="when">Mar. 2024</div></div>
+<div class="entry"><div>Excellent Poster Award, Korean Society of Plant Biologists (KSPB), Korea</div><div class="when">Nov. 2021</div></div>
+
+<h2>Conferences and Presentations</h2>
+<ul>
+  <li>2026 GPSRC International Conference, Konkuk University, Korea, May 2026</li>
+  <li>2026 Winter Conference of the Korean Society of Plant Biologists, Korea University, Korea, Feb. 2026 &mdash; Poster</li>
+  <li>2nd Global Plant Stress Research Center (GPSRC) &amp; 2025 KSMCB Plant Molecular Biology International Symposium, Seoul, Korea, Aug. 2025 &mdash; Organizer</li>
+  <li>2024 International Conference of the Korean Society of Plant Biologists, Seogwipo, Korea, Nov. 2024 &mdash; Oral presentation</li>
+  <li>15th HOPE Meeting, Kyoto, Japan, Feb. 2024 &mdash; Poster</li>
+  <li>2022 International Conference of the Korean Society of Plant Biologists, Busan, Korea, Nov. 2022 &mdash; Poster</li>
+  <li>2021 International Conference of the Korean Society of Plant Biologists, online, Nov. 2021 &mdash; Poster</li>
+  <li>2020 International Conference of the Korean Society of Plant Biologists, online, Nov. 2020 &mdash; Poster</li>
+  <li>2019 Annual Conference of the Korean Society of Plant Biologists, Buyeo, Korea, Nov. 2019 &mdash; Poster</li>
+  <li>2018 International Conference of the Korean Society of Plant Biologists, Busan, Korea, Nov. 2018 &mdash; Poster</li>
+</ul>
+
+</body>
+</html>
