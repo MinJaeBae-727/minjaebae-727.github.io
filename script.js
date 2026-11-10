@@ -1,19 +1,35 @@
 const navBtns = document.querySelectorAll('.nav-btn');
 const pages = document.querySelectorAll('.page');
 
-navBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    navBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const target = btn.dataset.target;
-    pages.forEach(p => p.classList.toggle('active', p.id === target));
-    window.scrollTo({top: 0, behavior: 'smooth'});
+// Each section has its own address (#publications etc.), so it can be linked and the back button works
+function showPage() {
+  const id = location.hash.slice(1);
+  const target = [...pages].some(p => p.id === id) ? id : 'home';
+  pages.forEach(p => p.classList.toggle('active', p.id === target));
+  navBtns.forEach(b => {
+    const on = b.getAttribute('href') === '#' + target;
+    b.classList.toggle('active', on);
+    if (on) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current');
   });
+}
+window.addEventListener('hashchange', () => {
+  showPage();
+  window.scrollTo({top: 0, behavior: 'smooth'});
 });
+showPage();
 
+// Theme choice is remembered across visits
 const themeToggle = document.getElementById('themeToggle');
+function setTheme(light) {
+  document.documentElement.classList.toggle('light', light);
+  themeToggle.innerHTML = light ? '&#9790;' : '&#9728;';
+  themeToggle.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+}
+setTheme(document.documentElement.classList.contains('light'));
 themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light');
+  const light = !document.documentElement.classList.contains('light');
+  setTheme(light);
+  try { localStorage.setItem('theme', light ? 'light' : 'dark'); } catch (e) {}
 });
 
 // Contact form: sent through FormSubmit without leaving the page

@@ -39,6 +39,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>try { if (localStorage.getItem('theme') === 'light') document.documentElement.classList.add('light'); } catch (e) {}</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7MEGZ9LLV"></script>
 <script>
@@ -50,6 +51,19 @@
 </head>
 <body>
 
+<header class="topbar">
+  <a class="brand" href="#home">Min Jae Bae</a>
+  <nav class="nav" aria-label="Sections">
+    <a class="nav-btn active" href="#home">Home</a>
+    <a class="nav-btn" href="#journey">Journey</a>
+    <a class="nav-btn" href="#research">Research</a>
+    <a class="nav-btn" href="#skills">Skills</a>
+    <a class="nav-btn" href="#publications">Publications</a>
+    <a class="nav-btn" href="#contact">Contact</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">&#9728;</button>
+</header>
+
 <div class="hero">
   <img src="images/hero.jpg" class="hero-bg" alt="Frost-covered Arabidopsis thaliana">
   <div class="hero-overlay"></div>
@@ -57,16 +71,6 @@
     <p>&ldquo;In every seed that survives the frost, chromatin remembers the cold.&rdquo;</p>
   </div>
 </div>
-
-<nav class="sidebar">
-  <button class="nav-btn active" data-target="home">Home</button>
-  <button class="nav-btn" data-target="journey">Journey</button>
-  <button class="nav-btn" data-target="research">Research</button>
-  <button class="nav-btn" data-target="skills">Skills</button>
-  <button class="nav-btn" data-target="publications">Publications</button>
-  <button class="nav-btn" data-target="contact">Contact</button>
-  <button class="theme-toggle" id="themeToggle">Toggle Theme</button>
-</nav>
 
 <main>
 
@@ -89,7 +93,7 @@
 
       <p class="highlight">Open to postdoctoral positions, collaborations, and industry R&amp;D opportunities.</p>
 
-      <a href="mailto:bmj727@gmail.com" class="btn btn-mail">Mail now!</a>
+      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
     </div>
   </div>
 </section>
@@ -137,7 +141,7 @@
 
   <div class="research-card">
     <h3>2. HOS15 as a Substrate-Recruiting Subunit of a Ubiquitin E3 Ligase</h3>
-    <p>I study HOS15 as a component of a ubiquitin E3 ligase complex that integrates cold stress signaling with chromatin modification and alternative splicing. HOS15 cooperates with HDACs and other chromatin factors to fine-tune gene expression, flowering time, and stress acclimation, establishing HOS15-centered complexes as key regulatory hubs in plant cold stress responses. In my Ph.D. work, I showed that HOS15 forms homodimers through its N-terminal LisH motif and that this dimerization is required for cold-induced ubiquitination and degradation of HD2C and for freezing tolerance.</p>
+    <p>I study HOS15 as a component of a ubiquitin E3 ligase complex that integrates cold stress signaling with chromatin modification and alternative splicing. HOS15 cooperates with HDACs and other chromatin factors to fine-tune gene expression, flowering time, and stress acclimation, establishing HOS15-centered complexes as key regulatory hubs in plant cold stress responses. Beginning with my M.S. research in 2019 and continuing through my Ph.D., I showed that HOS15 forms homodimers through its N-terminal LisH motif and that this dimerization is required for cold-induced ubiquitination and degradation of HD2C and for freezing tolerance. I built this project from the ground up, from cloning every construct to generating the complementation lines in plants.</p>
   </div>
 
   <div class="research-card">
@@ -161,7 +165,7 @@
 
 <section id="skills" class="page">
   <h1 class="title">Skills</h1>
-  <p class="subtitle">Click a card to explore each area of expertise.</p>
+  <p class="subtitle">Core techniques and tools I use across my research.</p>
 
   <div class="skill-card">
     <h3>1. Plant Molecular Biology &amp; Genetics</h3>
@@ -229,11 +233,11 @@
   <h2 class="section-h2">Patents</h2>
   <ul class="patent-list">
     <li>Vector for improving productivity of cellulose and transformed mouseear cress by the same &mdash; KR 10-2023-0113597</li>
-    <li>Vector for improving productivity and storage capacity of vegetable oil and transformed plant by the same &mdash; KR 10-2024-0168464</li>
-    <li>Sucrose-accumulating plant and method for preparing the same &mdash; KR 10-2025-0104961</li>
     <li>Vector for improving productivity of cellulose and transformed mouseear cress by the same &mdash; KR 10-2024-0168432</li>
-    <li>Recombinant Kluyveromyces marxianus strain with engineered xylose metabolic pathway and method for producing ethanol using the same &mdash; KR 10-2025-0104960</li>
+    <li>Vector for improving productivity and storage capacity of vegetable oil and transformed plant by the same &mdash; KR 10-2024-0168464</li>
     <li>Ethanol production and tolerance enhanced yeast strain and method for producing ethanol using the same &mdash; KR 10-2025-0104960</li>
+    <li>Sucrose-accumulating plant and method for preparing the same &mdash; KR 10-2025-0104961</li>
+    <li>Recombinant <em>Kluyveromyces marxianus</em> strain with engineered xylose metabolic pathway and method for producing ethanol using the same &mdash; KR 10-2025-0157597</li>
   </ul>
 
   <h2 class="section-h2">Awards</h2>
@@ -275,6 +279,10 @@
 </section>
 
 </main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Min Jae Bae &middot; Last updated November 10, 2026</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
