@@ -29,8 +29,8 @@ body {
 
 .hero {
   position: relative;
-  height: 55vh;
-  min-height: 320px;
+  height: 37vh;
+  min-height: 215px;
   overflow: hidden;
   display: flex;
   align-items: center;
