@@ -59,6 +59,7 @@
     <a class="nav-btn" href="#research">Research</a>
     <a class="nav-btn" href="#skills">Skills</a>
     <a class="nav-btn" href="#publications">Publications</a>
+    <a class="nav-btn" href="#software">Software</a>
     <a class="nav-btn" href="#contact">Contact</a>
   </nav>
   <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">&#9728;</button>
@@ -197,6 +198,8 @@
       <span class="pill">LC-MS proteomics</span>
       <span class="pill">Alternative splicing analysis</span>
       <span class="pill">R</span>
+      <span class="pill">DESeq2</span>
+      <span class="pill">R/Shiny app development</span>
       <span class="pill">HOMER</span>
     </div>
   </div>
@@ -246,6 +249,58 @@
     <li>Excellent Poster Award, Korean Society of Plant Biologists (KSPB), Korea, Nov. 2021</li>
     <li>HOPE Fellow, HOPE Meetings with Nobel Laureates, JSPS, Japan, Mar. 2024</li>
   </ul>
+</section>
+
+<section id="software" class="page">
+  <h1 class="title">PhytoOmics Studio <span class="status">In development &middot; v0.1 in preparation</span></h1>
+  <p class="subtitle">Integrated multi-omics analysis for plant chromatin and stress biology, without writing code.</p>
+
+  <p>PhytoOmics Studio is an R/Shiny application I am developing for plant biologists who want to analyse their own sequencing and proteomics data while keeping every step reproducible. It runs on your own computer, so the data are never uploaded. Each analysis is also an exported R function, and the app writes a methods paragraph and a software-version table that match exactly what was run.</p>
+
+  <h2 class="section-h2">Modules</h2>
+  <div class="module-grid">
+    <div class="module-card">
+      <h3>RNA-seq <span class="status status-on">Available</span></h3>
+      <p>Salmon output or a count table &rarr; DESeq2 &rarr; PCA, sample distances, volcano, MA, heatmap and single-gene plots &rarr; GO enrichment analysis, KEGG pathway enrichment and GSEA &rarr; qPCR reference gene stability.</p>
+    </div>
+    <div class="module-card">
+      <h3>NicE-seq / ATAC-seq <span class="status">Planned</span></h3>
+      <p>Peak annotation, TSS profiles, differential accessibility and links to nearby genes.</p>
+    </div>
+    <div class="module-card">
+      <h3>Proteomics (LC-MS) <span class="status">Planned</span></h3>
+      <p>Normalisation, missing values, limma, volcano and PCA.</p>
+    </div>
+    <div class="module-card">
+      <h3>Structure <span class="status">Planned</span></h3>
+      <p>Interface contacts of protein complexes, contact-based binding energy estimates and disordered regions from AlphaFold pLDDT.</p>
+    </div>
+    <div class="module-card">
+      <h3>Integration <span class="status">Planned</span></h3>
+      <p>One gene across transcript, chromatin accessibility and protein data.</p>
+    </div>
+  </div>
+
+  <h2 class="section-h2">Species</h2>
+  <p><em>Arabidopsis thaliana</em> (TAIR), rice (RAP-DB or MSU), tomato (ITAG4) and maize (B73 v3&ndash;v5). The species is detected from the gene IDs, and gene names, GO, KEGG and the qPCR reference gene panel follow that species.</p>
+
+  <h2 class="section-h2">Screenshots</h2>
+  <p class="form-note">Shown with the app's simulated demo data. Click an image to see it full size.</p>
+  <div class="gallery-nav">
+    <button type="button" class="gallery-btn" data-dir="-1" aria-label="Previous screenshot">&#10094;</button>
+    <button type="button" class="gallery-btn" data-dir="1" aria-label="Next screenshot">&#10095;</button>
+  </div>
+  <div class="gallery" id="gallery">
+    <figure><a href="images/phytoomics/home.jpg" target="_blank"><img src="images/phytoomics/home.jpg" alt="PhytoOmics Studio home screen" loading="lazy"></a><figcaption>Home screen</figcaption></figure>
+    <figure><a href="images/phytoomics/plots.jpg" target="_blank"><img src="images/phytoomics/plots.jpg" alt="Volcano plot, MA plot, heatmap and single-gene plot" loading="lazy"></a><figcaption>Volcano, MA, heatmap and single-gene plots</figcaption></figure>
+    <figure><a href="images/phytoomics/go.jpg" target="_blank"><img src="images/phytoomics/go.jpg" alt="GO enrichment analysis results" loading="lazy"></a><figcaption>GO enrichment analysis</figcaption></figure>
+    <figure><a href="images/phytoomics/gsea.jpg" target="_blank"><img src="images/phytoomics/gsea.jpg" alt="GSEA results and enrichment plot" loading="lazy"></a><figcaption>GSEA</figcaption></figure>
+    <figure><a href="images/phytoomics/methods.jpg" target="_blank"><img src="images/phytoomics/methods.jpg" alt="Automatically written methods paragraph" loading="lazy"></a><figcaption>Methods text written from the settings that were run</figcaption></figure>
+  </div>
+
+  <h2 class="section-h2">Install</h2>
+  <p>A Windows installer bundles R and every package the app needs, so the computer does not need R, and installation does not require administrator rights. The app opens in its own window and stops when the window is closed.</p>
+  <p class="note">The installer and source code will be released on GitHub with v0.1. If you would like to try it earlier, please <a href="#contact">contact me</a>.</p>
 </section>
 
 <section id="contact" class="page">

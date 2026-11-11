@@ -32,6 +32,15 @@ themeToggle.addEventListener('click', () => {
   try { localStorage.setItem('theme', light ? 'light' : 'dark'); } catch (e) {}
 });
 
+// Screenshot gallery: arrow buttons scroll one image at a time
+const gallery = document.getElementById('gallery');
+document.querySelectorAll('.gallery-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const step = gallery.querySelector('figure').offsetWidth + 16;
+    gallery.scrollBy({left: step * Number(btn.dataset.dir), behavior: 'smooth'});
+  });
+});
+
 // Contact form: sent through FormSubmit without leaving the page
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
